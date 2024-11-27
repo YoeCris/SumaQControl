@@ -252,11 +252,14 @@ class PantallaCargar(QWidget):
     def ordenar_alumnos_por_promedio(self):
         """Función para ordenar los alumnos por promedio de mayor a menor"""
         if hasattr(self, 'df') and not self.df.empty:
-            # Ordenar el DataFrame por la columna 'Promedio' en orden descendente
-            self.df = self.df.sort_values(by='Promedio', ascending=False).reset_index(drop=True)
-            # Actualizar la tabla con el DataFrame ordenado
-            self.mostrar_alumnos_en_tabla(self.df)
-            QMessageBox.information(self, "Éxito", "Alumnos ordenados por promedio de mayor a menor.")
+            try:
+                # Ordenar el DataFrame por la columna 'Promedio' en orden descendente
+                self.df = self.df.sort_values(by=['Promedio', 'Apellidos'], ascending=[False, True]).reset_index(drop=True)
+                # Actualizar la tabla con el DataFrame ordenado
+                self.mostrar_alumnos_en_tabla(self.df)
+                QMessageBox.information(self, "Éxito", "Alumnos ordenados.")
+            except KeyError:
+                QMessageBox.warning(self, "Error", "Asegúrate de que las columnas 'Promedio' y 'Apellidos' existan.")
         else:
             QMessageBox.warning(self, "Error", "No hay datos para ordenar. Por favor, cargue un archivo primero.")
 
