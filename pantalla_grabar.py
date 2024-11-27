@@ -1,7 +1,6 @@
 # pantalla_grabar.py
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QLineEdit, QSizePolicy, QSpacerItem, QFormLayout, QMessageBox, QFileDialog
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont
 import pandas as pd
 
 class PantallaGrabar(QWidget):

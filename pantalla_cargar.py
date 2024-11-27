@@ -1,5 +1,5 @@
 # pantalla_cargar.py
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QTableWidget, QAbstractItemView, QTableWidgetItem, QFileDialog, QMessageBox
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QTableWidget, QAbstractItemView, QTableWidgetItem, QFileDialog, QMessageBox
 from PyQt5.QtCore import Qt
 import pandas as pd
 from pantalla_grabar import PantallaGrabar

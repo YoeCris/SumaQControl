@@ -1,7 +1,5 @@
 # main.py
 from PyQt5.QtWidgets import QApplication, QMainWindow, QStackedWidget
-from PyQt5.QtGui import QPalette, QColor
-from PyQt5.QtCore import Qt  # Agrega esta línea
 import sys
 import pandas as pd
 

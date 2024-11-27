@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QSizePolicy
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton
 from PyQt5.QtGui import QFont, QPixmap
 from PyQt5.QtCore import Qt
 import sys
@@ -38,7 +38,7 @@ class PantallaPrincipal(QWidget):
         # Imagen izquierda (Logo Universidad)
         logo_universidad = QLabel(self)
         pixmap_universidad = QPixmap(resource_path("Logo_UNAP.png"))
-        logo_universidad.setPixmap(pixmap_universidad.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        logo_universidad.setPixmap(pixmap_universidad.scaled(120, 120, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         logo_universidad.setAlignment(Qt.AlignLeft)
         header_layout.addWidget(logo_universidad)
 
@@ -71,7 +71,7 @@ class PantallaPrincipal(QWidget):
         # Imagen derecha (Logo Escuela)
         logo_escuela = QLabel(self)
         pixmap_escuela = QPixmap(resource_path("Logo_FINESI.png"))
-        logo_escuela.setPixmap(pixmap_escuela.scaled(100, 100, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        logo_escuela.setPixmap(pixmap_escuela.scaled(120, 120, Qt.KeepAspectRatio, Qt.SmoothTransformation))
         logo_escuela.setAlignment(Qt.AlignRight)
         header_layout.addWidget(logo_escuela)
 
