@@ -39,6 +39,9 @@ class PantallaCargar(QWidget):
                 border-radius: 10px;
                 padding: 5px;
             }
+            QPushButton:hover {
+                background-color: #008bbb; 
+            }
         """)
         boton_cargar_archivo.clicked.connect(self.cargar_archivo)
         layout.addWidget(boton_cargar_archivo)
@@ -141,7 +144,7 @@ class PantallaCargar(QWidget):
                 font-size: 20px;
             }
             QPushButton:hover {
-                background-color: #9e0c31; 
+                background-color: #fc0606; 
             }
         """)
         boton_atras.clicked.connect(self.main_window.ir_a_atras)

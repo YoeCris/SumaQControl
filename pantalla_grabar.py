@@ -199,7 +199,7 @@ class PantallaGrabar(QWidget):
                         padding: 1px;
                     }
                     QPushButton:hover {
-                        background-color: #9e0c31;
+                        background-color: #fc0606;
                     }
                 """)
         boton_atras.clicked.connect(self.main_window.ir_a_atras)

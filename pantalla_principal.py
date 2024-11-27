@@ -1,7 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton, QSizePolicy
 from PyQt5.QtGui import QFont, QPixmap
 from PyQt5.QtCore import Qt
-
 import sys
 import os
 
@@ -89,9 +88,10 @@ class PantallaPrincipal(QWidget):
         boton_layout.setContentsMargins(30, 20, 30, 20)
 
         # Botones con efectos
-        boton_grabar = self.crear_boton_con_efectos("Ingreso de datos generales", self.main_window.ir_a_grabar, "#0073a2", "#42A5F5", "#1565C0")
-        boton_cargar = self.crear_boton_con_efectos("Cargar Registros", self.main_window.ir_a_cargar, "#1d99c2", "#81D4FA", "#29B6F6")
-        boton_salir = self.crear_boton_con_efectos("Salir", self.main_window.close, "#E53935", "#FF7043", "#D32F2F")
+        boton_grabar = self.crear_boton_con_efectos("Ingreso de datos generales", self.main_window.ir_a_grabar, "#106994", "#286cff", "#2949ff")
+        boton_cargar = self.crear_boton_con_efectos("Cargar Registros", self.main_window.ir_a_cargar, "#106994", "#286cff", "#2949ff")
+        boton_salir = self.crear_boton_con_efectos("Salir", self.main_window.close, "#106994", "#ff5959", "#fc0606")
+        
 
         # Añadir botones al layout de los botones
         boton_layout.addWidget(boton_grabar)
@@ -124,7 +124,6 @@ class PantallaPrincipal(QWidget):
             }}
             QPushButton:hover {{
                 background-color: {color_hover};
-                border: 3px solid white;
             }}
             QPushButton:pressed {{
                 background-color: {color_pressed};
